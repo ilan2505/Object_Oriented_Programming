@@ -1,8 +1,6 @@
-# TZ : 123456789
+# Teoudot Zeout :
 
-* ❤️ Hobbies: 
-  * Stock and Crypto Markets 📈 
-  * Sport ⚽🥋🏈🏀 
-  * Travel ✈     
+* 342615648
+* 207029786   
 
 # classes💻
