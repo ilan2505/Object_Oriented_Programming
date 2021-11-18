@@ -165,5 +165,5 @@ def allocate(Building, calls, output):
     removeHeaders(helpsvc, output)  # remove headers from svc
 
 
-if __name__ == '__main__':
-    allocate('B4.json', 'calls_c.csv', 'B100.csv')
+#if __name__ == '__main__':
+ #   allocate('B3.json', 'calls_c.csv', 'B100.csv')
