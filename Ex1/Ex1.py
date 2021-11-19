@@ -1,9 +1,9 @@
 import pandas as pd
 import json
 import csv
-import numpy
 
-from EX1_TEST import MyBuilding, Mycalls
+import MyBuilding
+import Mycalls
 
 
 # this func count how many stop will be with allocate to elevator number 'i'
@@ -149,7 +149,6 @@ def check(callsdet, mycall, stoplist, build):
                 stoplist[elev][j][2] = True
         stoplist[elev].sort()
 
-    print(len(callsdet))
     return (len(callsdet)-1)%b1.NOE, timeSrc, timeDest
 
 
@@ -164,6 +163,6 @@ def allocate(Building, calls, output):
     allocatecalls(elev, helpsvc, c1.callsdet)  # allocate calls to svc
     removeHeaders(helpsvc, output)  # remove headers from svc
 
-# The main algorithm
-if __name__ == '__main__':
-    allocate('B3.json', 'calls_c.csv', 'B100.csv')
+
+#if __name__ == '__main__':
+    #allocate('B1.json', 'calls_a.csv', 'B1100.csv')

@@ -1,6 +1,7 @@
 import csv
 
-from EX1_TEST import EX1, MyBuilding
+import Ex1
+import MyBuilding
 
 
 class Calls:
@@ -15,7 +16,7 @@ class Calls:
 
     def __init__(self, calls, build,):
         self.callsdet = []
-        self.b=MyBuilding.Elevator(build)
+        self.b= MyBuilding.Elevator(build)
         self.stoplist = self.b.stopList
         with open(calls) as csv_file:
             reader = csv.reader(csv_file)
@@ -24,7 +25,7 @@ class Calls:
                 self.timeCall = float(x[1])
                 self.src = int(x[2])
                 self.dest = int(x[3])
-                w, y, z = EX1.check(self.callsdet, [float(x[1]), int(x[2]), int(x[3])], self.stoplist, build)
+                w, y, z = Ex1.check(self.callsdet, [float(x[1]), int(x[2]), int(x[3])], self.stoplist, build)
                 self.elev = w
                 self.time_get_src = y
                 self.time_get_dest = z
