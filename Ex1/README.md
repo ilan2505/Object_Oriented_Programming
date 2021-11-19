@@ -24,7 +24,7 @@ In this assigment number 2 : we want to solve the problem of the call attributio
   * max_floor 
   * min_floor 
   * TOTAL_TIME_WAIT -> time total you are waiting for an elevator 
-* Ex1 :
+* Ex1 (this is our algo) :
   * def Betstop -> This func count how many stop will be with allocate to elevator number 'i'
   * def checkIfCost -> This func check if will be costing waiting time if we allocate the call to elevator number 'i'
   * def Checklaststop -> This func checks where is the last stop and how much is good to allocate to this elevator
