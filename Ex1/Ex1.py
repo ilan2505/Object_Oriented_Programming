@@ -164,6 +164,6 @@ def allocate(Building, calls, output):
     allocatecalls(elev, helpsvc, c1.callsdet)  # allocate calls to svc
     removeHeaders(helpsvc, output)  # remove headers from svc
 
-
-#if __name__ == '__main__':
- #   allocate('B3.json', 'calls_c.csv', 'B100.csv')
+# The main algorithm
+if __name__ == '__main__':
+    allocate('B3.json', 'calls_c.csv', 'B100.csv')
